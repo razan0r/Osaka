@@ -1,0 +1,152 @@
+:root {
+    --maincolor: #ff206e;
+}
+
+/* start header */
+.header {
+    background-image: url(../img/bg_osaka.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    transition: background-color 1s;
+    cursor: pointer;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+.header .icon:hover {
+    background-color: var(--maincolor);
+
+}
+
+.header .header-content a {
+    color: var(--maincolor);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+
+    color: var(--maincolor);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--maincolor);
+}
+
+/* start header */
+
+/*start about section*/
+.title h2 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color: #cacaca;
+
+}
+
+.title h3 {
+    font-size: 2rem;
+
+}
+
+.about {
+    background-image: url(../img/light_dot.jpg);
+}
+
+.about .about-content p:first-of-type {
+    color: var(--maincolor);
+}
+/*end about section*/
+
+
+/* start Services section*/
+
+
+.Services {
+    background-image: url(../img/dark_dot.jpg);
+}
+
+.Services .title h2 {
+    color: #222;
+}
+
+.Services .title h3 {
+    color: white;
+    position: relative;
+}
+
+.Services .Services-item h3:after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: var(--maincolor) !important;
+    transition: width 1s;
+
+}
+
+.Services-item .icon {
+    background-color: rgb(33, 37, 41);
+}
+
+.Services-item:hover .icon {
+
+    background-color: var(--maincolor) !important;
+}
+
+
+.Services .Services-item:hover h3:after {
+    width: 30%;
+}
+
+/* end Services section*/
+
+/* start Clients section */
+.client img {
+    width: 110px;
+    height: 110px;
+}
+
+.clients {
+    background-color: var(--maincolor);
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 30px;
+    border-radius: 50%;
+    text-indent: 0;
+
+}
+
+.carousel-indicators {
+    position: unset;
+}
+
+/* end Clients section */
+
+
+/* start projects section */
+.nav {
+    justify-content: center;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--maincolor);
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    color: black;
+    border: none;
+}
+/*end projects section*/
